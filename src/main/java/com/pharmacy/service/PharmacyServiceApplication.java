@@ -6,6 +6,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+/**
+ * This is the class that contains the main method to run the SpringApplication.
+ * 
+ * @author Shweta Parihar
+ */
 @ComponentScan("com.pharmacy")
 @SpringBootApplication
 public class PharmacyServiceApplication {
@@ -15,8 +20,6 @@ public class PharmacyServiceApplication {
 	 *
 	 * @param args No need to pass any arguments.
 	 *
-	 *             TODO : the port of can be an argument, if no args are porvided
-	 *             the server can start on port 8080.
 	 */
 	public static void main(final String[] args) {
 
@@ -24,7 +27,7 @@ public class PharmacyServiceApplication {
 		final SpringApplication app = new SpringApplication(PharmacyServiceApplication.class);
 
 		// Changing the default properties collection to configure the server to start
-		// on port 8083.
+		// on port 8181.
 		app.setDefaultProperties(Collections.singletonMap("server.port", "8181"));
 
 		// Run the application.
